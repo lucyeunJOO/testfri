@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    color: #111;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/*Mobile*/
+
+.quizbox{
+    width: 100%;
+    padding: 2em 0;;
+    background: #f9ea9a;
+    border-radius: 3.125em;
+}
+.tit{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+.bod{
+    border-bottom: 1px solid #111;
+    padding-bottom: 5px;
+}
+.bod.bod:first-child{
+    border-top: 1px solid #111;
+}
+.q_tit{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+form{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.875em;
+}
+label{
+    display: block;
+    margin: 10px 0;
+}
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#anbtn{
+    width: 250px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: #4357ad;
+    color: #fff;
+    margin: 50px auto;
+    display: block;
+}
+.modal{
+    width: 70%;
+    height: 50%;
+    background: #111;
+    position: fixed;
+    top: 25%;
+    left:15%;
+    border-radius: 10px;
+    display: none;
+}
+.modal.on{
+    display: block;
+}
+
+@media(min-width:600px){
+    .quizbox{
+        width: 95%;
+        padding: 2em 1.5em;
+        background: #f9ea9a;
+        border-radius: 3.125em;
+        margin: 0 auto;
+    }
+    .q_tit{
+        font-size: 2rem;
+    }
+    form{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.875em;
+    }
+    label{
+        display: inline-block;
+        margin: 20px 0;
+    }
+    input[type=radio] {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+    #anbtn{
+        width: 300px;
+        padding: 25px;
+        font-size: 2.5rem;
+        margin: 55px auto;
+    }
+    .modal{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media(min-width:1024px){
+    .quizbox{
+        width: 80%;
+        padding: 2.5em 3.5em;
+        margin: 0 auto;
+        background: #f9ea9a;
+    }
+    .tit{
+        font-size: 4rem;
+    }
+    .q_tit{
+        font-size: 3.5rem;
+    }
+    form{
+        font-size: 3.5rem;
+        line-height: 1.875em;
+    }
+    label{
+        margin: 0 auto;
+    }
+    input[type=radio] {
+        width: 50px;
+        height: 50px;
+    }
+    #anbtn{
+        width: 450px;
+        padding: 25px;
+        font-size: 4rem;
+        margin: 55px auto;
+    }
+
+}
