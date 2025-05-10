@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Quiz Event</title>
     <link href="style.css" rel="stylesheet">
     
 <body>
     <section class="quizbox">
         <div class="modal">
-           
+          <div class="clobtnbox">
+            <button id="clobtn">닫기</button>
+          </div>  
+
+          <div class="modal_in" id="modal_in">
+           <p id="sco"></p>
+
+           <form id="prize_form">
+          
+          <label>이름:<input type="text" aria-label="Full name" name="fullName" placeholder="성함" required/></label>  
+          <label>이메일:<input type="email" name="email" placeholder="이메일" required/></label>
+          <label>전화번호:<input type="tel" name="tel" placeholder="전화번호"></label>    
+
+        <div class="subt" id="subt">
+          <button class="moin_btn" type="submit">제출</button>
+        </div>
+        </form>
+          </div> 
         </div><!--.modal-->
 
         <h1 class="tit">퀴즈 이벤트</h1><!--.tit-->
@@ -22,16 +39,20 @@
 
 
            <label>
-            ① <input type='radio' name='fruits' value='apple'/>사과
+            <input type="radio" name="fruits" value="apple"/>
+            <span class="custom-radio">① 사과</span>
            </label>
            <label>
-            ② <input type='radio' name='fruits' value='tomato'/>토마토
+            <input type="radio" name="fruits" value="tomato"/>
+            <span class="custom-radio">② 토마토</span>
            </label>
            <label>
-            ③ <input type='radio' name='fruits' value='banana' class="ans"/>바나나
+            <input type="radio" name="fruits" value="banana"/>
+            <span class="custom-radio">③ 바나나</span>
            </label>
            <label>
-            ④ <input type='radio' name='fruits' value='strawberry'/>딸기
+            <input type="radio" name="fruits" value="strawberry"/>
+            <span class="custom-radio">④ 딸기</span>
            </label> 
           </div><!--.bod-->  
 
@@ -41,16 +62,20 @@
             </h2><!--.q_tit-->
 
            <label>
-            ① <input type='radio' name='animal' value='bear'/>곰
+            <input type="radio" name="animal" value="bear"/>
+            <snpan class="custom-radio">① 곰</snpan>
            </label>
            <label>
-            ② <input type='radio' name='animal' value='squirrel' class="ans"/>다람쥐
+            <input type="radio" name="animal" value="squirrel"/>
+            <span class="custom-radio">② 다람쥐</span>
            </label>
            <label>
-            ③ <input type='radio' name='animal' value='rabbit'/>토끼
+            <input type="radio" name="animal" value="rabbit"/>
+            <span class="custom-radio">③ 토끼</span>
            </label>
            <label>
-            ④ <input type='radio' name='animal' value='dog'/>개
+            <input type="radio" name="animal" value="dog"/>
+            <span class="custom-radio">④ 개</span>
            </label> 
           </div><!--.bod--> 
 
@@ -61,16 +86,20 @@
             </h2><!--.q_tit-->
 
            <label>
-            ① <input type='radio' name='cook' value='cuttingboard'/>도마
+            <input type="radio" name="cook" value="cuttingboard"/>
+            <span class="custom-radio">① 도마</span>
            </label>
            <label>
-            ② <input type='radio' name='cook' value='vacuumcleaner' class="ans"/>청소기
+            <input type="radio" name="cook" value="vacuumcleaner" class="ans"/>
+            <span class="custom-radio">② 청소기</span>
            </label>
            <label>
-            ③ <input type='radio' name='cook' value='pot'/>냄비
+            <input type="radio" name="cook" value="pot"/>
+            <span class="custom-radio">③ 냄비</span>
            </label> 
            <label>
-            ④ <input type='radio' name='cook' value='scoop'/>국자
+            <input type="radio" name="cook" value="scoop"/>
+            <span class="custom-radio">④ 국자</span>
            </label>
           </div> 
 
@@ -80,16 +109,20 @@
             </h2><!--.q_tit-->
 
            <label>
-            ① <input type="radio" name="capital" value="seoul" class="ans"/>서울
+            <input type="radio" name="capital" value="seoul" class="ans"/>
+            <span class="custom-radio">① 서울</span>
            </label> 
            <label>
-            ② <input type='radio' name='capital' value='busan'/>부산
+            <input type="radio" name="capital" value="busan"/>
+            <span class="custom-radio">② 부산</span>
            </label>  
            <label>          
-            ③ <input type='radio' name='capital' value='daegu'/>대구
+            <input type="radio" name="capital" value="daegu"/>
+            <span class="custom-radio">③ 대구</span>
            </label>
            <label>
-            ④ <input type='radio' name='capital' value='dajeon'/>대전
+            <input type="radio" name="capital" value="dajeon"/>
+            <span class="custom-radio">④ 대전</span>
            </label> 
           </div> 
 
@@ -99,21 +132,25 @@
             </h2><!--.q_tit-->
     
            <label>  
-            ① <input type='radio' name='flower' value='forsythia'/>개나리
+            <input type="radio" name="flower" value="forsythia"/>
+            <span class="custom-radio">① 개나리</span>
            </label>
            <label>
-            ② <input type='radio' name='flower' value='azalea'/>진달래
+            <input type="radio" name="flower" value="azalea"/>
+            <span class="custom-radio">② 진달래</span>
            </label> 
            <label>
-            ③ <input type='radio' name='flower' value='cosmosflower'/>코스모스
+            <input type="radio" name="flower" value="cosmosflower"/>
+            <span class="custom-radio">③ 코스모스</span>
            </label>
            <label>
-            ④ <input type='radio' name='flower' value='fourleafclover' class="ans"/>네잎클로버
+            <input type="radio" name="flower" value="fourleafclover"/>
+            <span class="custom-radio">④ 네잎클로버</span>
            </label> 
         </div> 
         </form>
 
-        <button id="anbtn">결과보기</button>
+        <button id="anbtn" onclick="totalScore()">결과보기</button>
     </section><!--.quizbox-->
 
     <script src="index.js"></script>
