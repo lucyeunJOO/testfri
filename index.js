@@ -51,7 +51,6 @@ function totalScore() {
   let score = 0;
   const toTalsco = 20;
 
-  // 정답 목록
   const answers = {
     fruits: "banana",
     animal: "squirrel",
@@ -82,15 +81,10 @@ function totalScore() {
 setTimeout(function () {
       priZe.style.display ="block";
       sCo.style.display = "none";
-    }, 3000);
-
-// function resetModal() {
-//       sCo.classList.add("active");
-//       priZe.classList.remove("active");
-//     }
+    }, 5000);
 
 document.getElementById('prize_form').addEventListener('submit', function(e) {
-  e.preventDefault(); // 기본 제출 막기
+  e.preventDefault();
 
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
@@ -101,13 +95,14 @@ document.getElementById('prize_form').addEventListener('submit', function(e) {
   error.textContent = '';
 
   // 이름 빈값 확인
-  if (name === '') {
+  const nameRegex = /^[가-힣a-zA-Z\s]+$/;
+  if (!nameRegex.test(name)) {
     // error.textContent = '이름을 입력해주세요.';
     error.textContent ='성과 이름을 함께 입력해주세요';
     return;
   }
-
-  // 이메일 형식 확인 (간단한 정규식)
+name === ''
+  // 이메일 형식 확인
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     error.textContent = '올바른 이메일 형식을 입력해주세요.';
@@ -123,9 +118,6 @@ document.getElementById('prize_form').addEventListener('submit', function(e) {
 
   alert('전화번호 유효성 검사 통과!');
 
-
-
-  // 통과하면 폼 제출 또는 데이터 처리
+  //
   alert('폼이 성공적으로 제출되었습니다!');
-  // this.submit();  ← 실제 서버로 제출하려면 이걸 사용
 });

@@ -34,12 +34,10 @@ form{
     line-height: 1.875em;
 }
 
-/* 라디오 버튼 숨기기 */
 input[type="radio"] {
   display: none;
 }
 
-/* 라벨 스타일 */
 .custom-radio {
   width: 80%;
   display: block;
@@ -55,7 +53,6 @@ input[type="radio"] {
   color: #ffffff;
 }
 
-/* 선택된 경우 스타일 */
 input[type="radio"]:checked + .custom-radio {
   background-color: #4caf50;
   color: white;
@@ -85,7 +82,6 @@ input[type="radio"]:checked + .custom-radio {
     left:15%;
     border-radius: 50px;
     display: none;
-
 }
 .modal.on{
     display: block;
@@ -96,7 +92,7 @@ input[type="radio"]:checked + .custom-radio {
     padding: 10px 20px;
     border-radius: 50px;
     background: green;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
     font-weight: 900;
     margin: 5px 10px 0 auto;
@@ -106,7 +102,7 @@ input[type="radio"]:checked + .custom-radio {
 }
 
 #sco{
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #111;
     margin-top: 20%;
     text-align: center;
@@ -120,14 +116,14 @@ input[type="radio"]:checked + .custom-radio {
 #prize_form label{
     display: block;
 }
-#prize_form #p1{
+#prize_form input{
     width: 300px;
     height: 50px;
     border-radius: 50px;
 }
-#prize_form #p1::placeholder{
+#prize_form input::placeholder{
     color: gray;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 10px;
     opacity: 1;
     padding-left: 10px;
@@ -138,20 +134,21 @@ input[type="radio"]:checked + .custom-radio {
     display: block;
     margin: 20px auto;
     background: #1338bd;
-    font-size: 36px;
+    font-size: 2.25rem;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
 
+
 @keyframes countnum {
   0% {
-    transform: scale(0);  /* 처음에는 크기가 0 */
-    opacity: 0;           /* 투명도도 0 */
+    transform: scale(0); 
+    opacity: 0; 
   }
   100% {
-    transform: scale(1);  /* 끝에는 원래 크기로 */
-    opacity: 1;            /* 투명도가 1 */
+    transform: scale(1); 
+    opacity: 1;
   }
 }
 
@@ -163,8 +160,11 @@ input[type="radio"]:checked + .custom-radio {
         border-radius: 3.125em;
         margin: 0 auto;
     }
+    .tit{
+        font-size: 3rem;
+    }
     .q_tit{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     form{
         font-size: 2rem;
@@ -193,14 +193,13 @@ input[type="radio"]:checked + .custom-radio {
         left:15%;
     }
     .custom-radio {
-     width: 100%;
+        width: 100%;
     }
-    #prize_form #p1{
-    width: 100%;
-    height: 50px;
-    border-radius: 50px;
-}
-
+    #prize_form input{
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+    }
 }
 
 @media(min-width:1024px){
@@ -211,7 +210,7 @@ input[type="radio"]:checked + .custom-radio {
         background: #f9ea9a;
     }
     .tit{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .q_tit{
         font-size: 3.5rem;
@@ -219,11 +218,11 @@ input[type="radio"]:checked + .custom-radio {
     form{
         font-size: 3.5rem;
         line-height: 1.875em;
+        margin-top: 0;
     }
     label{
         margin: 0 auto;
     }
-
     input[type=radio] {
         width: 50px;
         height: 50px;
@@ -234,10 +233,31 @@ input[type="radio"]:checked + .custom-radio {
         font-size: 4rem;
         margin: 55px auto;
     }
-    .modal{
-        overflow-y: auto;
-    }
-    #prize_box #p1{
+    #prize_form input{
         padding: 10px 0;
+        width: 70%;
+    }
+    #prize_form label{
+        display: flex;
+        justify-content: space-between;
+    }
+    .p_tit{
+        font-size: 3rem;
+        margin: 0;
+    }
+    #clobtn{
+        margin-left: auto;
+        width: 300px;
+        padding: 20px 20px;
+    }
+    #sco{
+        font-size: 5rem;
+        color: #111;
+        margin-top: 10%;
+    }
+    .moin_btn{
+        width: 400px;
+        padding: 25px 0;
+    margin: 20px auto;
     }
 }
