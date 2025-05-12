@@ -95,13 +95,11 @@ document.getElementById('prize_form').addEventListener('submit', function(e) {
   error.textContent = '';
 
   // 이름 빈값 확인
-  const nameRegex = /^[가-힣a-zA-Z\s]+$/;
-  if (!nameRegex.test(name)) {
-    // error.textContent = '이름을 입력해주세요.';
+  if (name === '') {
     error.textContent ='성과 이름을 함께 입력해주세요';
     return;
   }
-name === ''
+
   // 이메일 형식 확인
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
